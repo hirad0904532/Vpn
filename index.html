@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VPN APK Download</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Vazirmatn', sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.9;
+    font-size:18px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.status{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.online{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:25px;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.35);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.9;
+    font-size:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 20px;
+    background:#3b82f6;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+    margin-top:50px;
+}
+
+.telegram{
+    display:inline-block;
+    margin-top:15px;
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>VPN APK Center</h1>
+    <p>دانلود مستقیم برنامه های VPN بدون نیاز به کانفیگ</p>
+</header>
+
+<div class="container">
+
+    <div class="status">
+        وضعیت سرور:
+        <span class="online" id="status">Online</span>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h2>Jump Jump VPN</h2>
+            <p>
+                VPN سریع و ساده برای اندروید با اتصال آسان و بدون نیاز به تنظیمات.
+            </p>
+
+            <a href="apps/jumpjumpvpn.apk" class="btn" download>
+                دانلود APK
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h2>Fast VPN</h2>
+            <p>
+                برنامه VPN سبک و سریع با سرورهای متعدد و اتصال یک کلیکی.
+            </p>
+
+            <a href="apps/fastvpn.apk" class="btn" download>
+                دانلود APK
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔒</div>
+            <h2>Secure VPN</h2>
+            <p>
+                اتصال امن و پایدار برای وب گردی و بازی آنلاین بدون قطعی.
+            </p>
+
+            <a href="apps/securevpn.apk" class="btn" download>
+                دانلود APK
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>ساخته شده با GitHub Pages</p>
+
+    <a class="telegram" href="https://t.me/yourchannel">
+        کانال تلگرام
+    </a>
+
+</footer>
+
+<script>
+
+setInterval(() => {
+
+    const status = document.getElementById("status");
+
+    if(status.innerText === "Online"){
+        status.innerText = "Fast Server";
+    }else{
+        status.innerText = "Online";
+    }
+
+},3000);
+
+</script>
+
+</body>
+</html>
